@@ -43,7 +43,7 @@ else()
   set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib/arm64/)
   link_directories(${PROJECT_SOURCE_DIR}/lib/arm64/)
 endif()
-
+include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${catkin_INCLUDE_DIRS})
 
