@@ -66,6 +66,8 @@ target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}
 )
 
+add_subdirectory(${PROJECT_SOURCE_DIR}/examples)
+
 install(DIRECTORY include/ DESTINATION include)
 install(DIRECTORY ${LIBRARY_OUTPUT_PATH} DESTINATION lib)
 
